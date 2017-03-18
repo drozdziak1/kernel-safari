@@ -1,0 +1,1 @@
+cmd_/home/drozdziak1/kernel-safari/dsp17-3/hello.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/drozdziak1/kernel-safari/dsp17-3/hello.ko /home/drozdziak1/kernel-safari/dsp17-3/hello.o /home/drozdziak1/kernel-safari/dsp17-3/hello.mod.o ;  true
