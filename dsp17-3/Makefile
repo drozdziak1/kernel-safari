@@ -2,9 +2,10 @@ obj-m += hello.o
 
 KERNEL_VERSION := $(shell uname -r)
 
+KDIR ?= /lib/modules/$(KERNEL_VERSION)/build
+
 all:
-	$(MAKE) -C /lib/modules/$(KERNEL_VERSION)/build M=$(PWD) modules
+	$(MAKE) -C $(KDIR) M=$(PWD) modules
 
 clean:
-	$(MAKE) -C /lib/modules/$(KERNEL_VERSION)/build M=$(PWD) clean
-
+	$(MAKE) -C $(KDIR) M=$(PWD) clean
