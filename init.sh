@@ -8,6 +8,10 @@ mount -t proc proc /proc
 mount -t sysfs sysfs /sys
 mount -t devpts devpts /dev/pts
 
+# Take care of devices
+echo /bin/mdev > /proc/sys/kernel/hotplug
+mdev -s
+
 # Execute shell
 while true; do
 	/bin/sh
