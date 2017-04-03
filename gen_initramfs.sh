@@ -1,3 +1,3 @@
 #!/bin/sh
 
-./linux/scripts/gen_initramfs_list.sh ./initramfs_desc > vm.img
+./linux/usr/gen_init_cpio ./initramfs_desc > vm.img
