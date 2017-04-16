@@ -1,15 +1,18 @@
-# type		dest		src			perm	usr	grp
+# Columns:
+# type dest src perm usr grp
 
 # dirs
-dir		/bin					775	0	0
-dir		/proc					775	0	0
-dir		/sys					775	0	0
-dir		/dev/pts				775 	0	0
+dir /bin 775 0 0
+dir /proc 775 0 0
+dir /sys 775 0 0
+dir /dev/pts 775 0 0
 
 # files
-file		/init		init.sh			775	0	0
-file		/bin/busybox	busybox/busybox		775	0	0
-file		/hello.ko	dsp17-3/hello.ko	775	0	0
+file /init init.sh 775 0 0
+file /bin/busybox busybox/busybox 775 0 0
+file /hello.ko dsp17-3/hello.ko 775 0 0
+file /ioctl_module.ko ioctl-research/ioctl_module.ko 775 0 0
+file /ioctl_tester ioctl-research/ioctl_tester 775 0 0
 
 # symlinks
-slink		/bin/sh		/bin/busybox		775	0	0
+slink /bin/sh /bin/busybox 775 0 0
