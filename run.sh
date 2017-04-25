@@ -5,4 +5,4 @@ qemu-system-$(uname -m) \
 	-initrd ./vm.img \
 	-append console=ttyS0 \
 	-nographic \
-	$@
+	"$@"
