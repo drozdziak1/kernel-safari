@@ -1,5 +1,5 @@
 KERNEL_VERSION ?= $(shell uname -r)
-KDIR?= /lib/modules/$(KERNEL_VERSION)/build
+KDIR ?= /lib/modules/$(KERNEL_VERSION)/build
 
 obj-m += kmtest_module.o
 
