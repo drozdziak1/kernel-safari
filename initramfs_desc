@@ -10,9 +10,13 @@ dir /dev/pts 775 0 0
 # files
 file /init init.sh 775 0 0
 file /bin/busybox busybox/busybox 775 0 0
+
 file /hello.ko dsp17-3/hello.ko 775 0 0
+
 file /ioctl_module.ko ioctl-research/ioctl_module.ko 775 0 0
 file /ioctl_tester ioctl-research/ioctl_tester 775 0 0
+
+file /kmtest_module.ko ks-5/kmtest_module.ko 775 0 0
 
 # symlinks
 slink /bin/sh /bin/busybox 775 0 0
